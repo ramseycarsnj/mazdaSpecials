@@ -122,37 +122,7 @@ $(document).ready(function(){
     '',
     'vehicleImages/cx5.jpg',
     'http://www.ramseymazda.com/new/Mazda/2016-Mazda-Mazda+CX-5-714db7880a0e0ae73edd85543eb739ce.htm');
-
   vehicleArray[1] = new Vehicle(
-    2016,
-    'Mazda',
-    'CX-9 TOURING',
-    'Titanium',
-    '5DR hatch 7 passenger',
-    '4-cylinder Automatic with OD AWD',
-    'Automatic',
-    'abs breaks',
-    'power steering',
-    'power windows/locks/seats/mirrors,',
-    'cruise control, dual/side airbags, 3rd row seating, traction control, alloy wheels, keyless remote enntry, r/wiper/washer',
-    'G0121829',
-    'MZG2078',
-    '',
-    '38,670',
-    219,
-    '23,202',
-    '0',
-    'inc',
-    '3,867',
-    '7,884',
-    '36',
-    '10',
-    '.15',
-    '4,681 ',
-    '',
-    'vehicleImages/cx9.png',
-    'http://www.ramseymazda.com/new/Mazda/2016-Mazda-Mazda+CX-9-eef8a37c0a0e0a1771591b19a500c5f8.htm');
-  vehicleArray[2] = new Vehicle(
     2017,
     'Mazda',
     'MAZDA3 TOURING',
@@ -181,7 +151,7 @@ $(document).ready(function(){
     '',
     'vehicleImages/m3.png',
     'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda3-e05917e70a0e0a6b1e295666475b7bc5.htm');
-  vehicleArray[3] = new Vehicle(
+  vehicleArray[2] = new Vehicle(
     2017,
     'Mazda',
     'MAZDA6 SPORT',
@@ -210,7 +180,7 @@ $(document).ready(function(){
     '',
     'vehicleImages/m6.png',
     'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda6-6c26ea810a0e0a6b1b4f73a5ab69bf67.htm');
-  vehicleArray[4] = new Vehicle(
+  vehicleArray[3] = new Vehicle(
     2017,
     'Mazda',
     'CX-3',
@@ -239,6 +209,35 @@ $(document).ready(function(){
     '',
     'vehicleImages/cx3.png',
     'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-3-da7d1d830a0e0a1771591b19e093828e.htm');
+  // vehicleArray[4] = new Vehicle(
+  //     2016,
+  //     'Mazda',
+  //     'CX-9 TOURING',
+  //     'Titanium',
+  //     '5DR hatch 7 passenger',
+  //     '4-cylinder Automatic with OD AWD',
+  //     'Automatic',
+  //     'abs breaks',
+  //     'power steering',
+  //     'power windows/locks/seats/mirrors,',
+  //     'cruise control, dual/side airbags, 3rd row seating, traction control, alloy wheels, keyless remote enntry, r/wiper/washer',
+  //     'G0121829',
+  //     'MZG2078',
+  //     '',
+  //     '38,670',
+  //     219,
+  //     '23,202',
+  //     '0',
+  //     'inc',
+  //     '3,867',
+  //     '7,884',
+  //     '36',
+  //     '10',
+  //     '.15',
+  //     '4,681 ',
+  //     '',
+  //     'vehicleImages/cx9.png',
+  //     'http://www.ramseymazda.com/new/Mazda/2016-Mazda-Mazda+CX-9-eef8a37c0a0e0a1771591b19a500c5f8.htm');
 
   for (var i = 0; i < vehicleArray.length; i++) {
     listing(vehicleArray[i]);
