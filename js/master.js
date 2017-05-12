@@ -31,7 +31,8 @@ $(document).ready(function(){
      totalAtInception,
      additionalInfo,
      vehicleImage,
-     vehicleUrl
+     vehicleUrl,
+     buyItNow
     ){
       this.year = year;
       this.make = make;
@@ -61,6 +62,7 @@ $(document).ready(function(){
       this.additionalInfo = additionalInfo;
       this.vehicleImage = vehicleImage;
       this.vehicleUrl = vehicleUrl;
+      this.buyItNow = buyItNow;
   }
 
   function listing(thisCar){
@@ -83,6 +85,8 @@ $(document).ready(function(){
         </div>
         <h4 class="moneyDue">$${thisCar.totalAtInception} DUE AT SIGNING</h4>
 
+        ${thisCar.buyItNow}
+
         <a href="${thisCar.vehicleUrl}" class="linkButton" target="_blank">VIEW VEHICLE</a>
 
         <p class="disclaimer">VIN ${thisCar.vin}. Stk ${thisCar.stock}. ${thisCar.doors}, ${thisCar.engine}, ${thisCar.transmission}, air conditioning, power steering/ABS brakes/windows/locks/mirrors, cd/MP3, ${thisCar.equipment}. MSRP: $${thisCar.msrp}. $${thisCar.totalAtInception} due at inception. $${thisCar.moneyDown} down + 1st mo pymt $${thisCar.leasePrice}+ bank fee incl. + $0 sec dep. $${thisCar.totalPayment} ttl pymts/$${thisCar.residual} residual.${thisCar.additionalInfo} Prices include all costs to be paid by a consumer except for licensing, registration, taxes, and $299 doc. fee. Tier 1 credit approval thru primary lender. Lessee resp. for excess wear/tear. 10K mi. per yr/.25¢ per mi. over thereafter. See dealer for complete details. Not resp. for typos. Offers expire ${expiration}.</p>
@@ -93,6 +97,37 @@ $(document).ready(function(){
   }
 
   vehicleArray[0] = new Vehicle(
+  2016.5,
+  'Mazda',
+  'CX-5 GRAND TOURING',
+  'BLACK',
+  '5DR hatch',
+  '4-cylinder Automatic with OD AWD',
+  'Automatic',
+  'abs breaks,',
+  'power steering,',
+  'power windows/locks/seats/mirrors,',
+  'air conditioning, leather interior, heated seats,  AM/FM radio, cruise control, dual airbags, side airbags, traction control, alloy wheels, keyless remote entry, R/wiper/washer, Navigation',
+  'G0888914',
+  'MZG2029',
+  '',
+  '31,045',
+  279,
+  '17,074',
+  0,
+  'included',
+  '3,104.50',
+  '10,044',
+  36,
+  10,
+  '.15',
+  '3,978',
+  '<sup>*</sup> After $2000 factory rebate.',
+  'vehicleImages/cx5_2.jpg',
+  'http://www.ramseymazda.com/new/Mazda/2016-Mazda-Mazda+CX-5-e4f5f2020a0e0ae80ba064fbf00902d3.htm',
+  '<div style="margin-bottom: 20px;background-color:#fff;">Buy Now Price: <span style="font-weight: 900; font-size: 35px;background-color: #fff;">$25,995<sup>*</sup></span></div>');
+
+  vehicleArray[1] = new Vehicle(
   2017,
   'Mazda',
   'Mazda 3 TOURING',
@@ -120,9 +155,10 @@ $(document).ready(function(){
   '3,017',
   '',
   'vehicleImages/m3.png',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda3-e4f5ee110a0e0ae80ba064fb2223becd.htm');
+  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda3-e4f5ee110a0e0ae80ba064fb2223becd.htm',
+  '');
 
-  vehicleArray[1] = new Vehicle(
+  vehicleArray[2] = new Vehicle(
   2017,
   'Mazda',
   'Mazda 6 SPORT',
@@ -150,9 +186,10 @@ $(document).ready(function(){
   '3,172',
   '',
   'vehicleImages/m6.png',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda6-eef8e6ea0a0e0a1771591b19fff16f61.htm');
+  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda6-eef8e6ea0a0e0a1771591b19fff16f61.htm',
+  '');
 
-  vehicleArray[2] = new Vehicle(
+  vehicleArray[3] = new Vehicle(
   2017,
   'Mazda',
   'CX-3 SPORT',
@@ -180,9 +217,10 @@ $(document).ready(function(){
   '2,995',
   '',
   'vehicleImages/cx3.png',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-3-da7d1d830a0e0a1771591b19e093828e.htm');
+  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-3-da7d1d830a0e0a1771591b19e093828e.htm',
+  '');
 
-  vehicleArray[3] = new Vehicle(
+  vehicleArray[4] = new Vehicle(
   2017,
   'Mazda',
   'CX-5 SPORT',
@@ -210,9 +248,10 @@ $(document).ready(function(){
   '3,442',
   '',
   'vehicleImages/cx5.png',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-5-b94a8c230a0e0ae836bfff5126417d57.htm');
+  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-5-b94a8c230a0e0ae836bfff5126417d57.htm',
+  '');
 
-  vehicleArray[4] = new Vehicle(
+  vehicleArray[5] = new Vehicle(
   2017,
   'Mazda',
   'CX-9 TOURING',
@@ -240,7 +279,10 @@ $(document).ready(function(){
   '4,755',
   '',
   'vehicleImages/cx9.png',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-9-19e0bad40a0e0a1725c5dc92ee32445c.htm');
+  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-9-19e0bad40a0e0a1725c5dc92ee32445c.htm',
+  '');
+
+
 
 
 
