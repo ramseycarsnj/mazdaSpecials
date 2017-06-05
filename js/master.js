@@ -97,7 +97,7 @@ $(document).ready(function(){
   }
 
   vehicleArray[0] = new Vehicle(
-  2016.5,
+  2017,
   'Mazda',
   'MAZDA3 TOURING',
   'Silver',
@@ -128,7 +128,7 @@ $(document).ready(function(){
   '');
 
   vehicleArray[1] = new Vehicle(
-  2016.5,
+  2017,
   'Mazda',
   'MAZDA6 SPORT',
   'Titianium Flash',
@@ -159,7 +159,7 @@ $(document).ready(function(){
   '');
 
   vehicleArray[2] = new Vehicle(
-  2016.5,
+  2017,
   'Mazda',
   'CX-9 TOURING',
   'Black',
@@ -190,7 +190,7 @@ $(document).ready(function(){
   '');
 
   vehicleArray[3] = new Vehicle(
-  2016.5,
+  2017,
   'Mazda',
   'CX-3 SPORT',
   'Ceramic',
@@ -221,7 +221,7 @@ $(document).ready(function(){
   '');
 
   vehicleArray[4] = new Vehicle(
-  2016.5,
+  2017,
   'Mazda',
   'CX-5 SPORT',
   'Black',
