@@ -70,36 +70,7 @@ $(document).ready(function(){
 
   }
 
-  vehicleArray[0] = new Vehicle(
-  2017,
-  'Mazda',
-  'CX-9 <span class="superBold">TOURING</span>',
-  'Silver',
-  '5DR Hatch',
-  '4-cylinder Automatic with OD AWD',
-  'Automatic AWD',
-  'abs breaks,',
-  'power steering,',
-  'power windows/locks/mirrors,',
-  'air conditioning, AM/FM radio, cruise control, leatehr interior, heated seats, 3rd row seating, roof rack, moonroof, dual airbags, side airbags,traction control, alloy wheels, keyless remote entry, r/wiper/washer, premium package, navigation, foglights, backup sensors',
-  'H0143013',
-  'MZH0904',
-  '',
-  '40,905',
-  279,
-  '24,952',
-  0,
-  'included',
-  '4,090',
-  '10,044',
-  36,
-  10,
-  '.15',
-  '4,964.50',
-  '',
-  'vehicleImages/MZH0904.jpg',
-  'http://www.ramseymazda.com/new/Mazda/2017-Mazda-Mazda+CX-9-86363e4b0a0e0ae7682674b80f7d7eb6.htm',
-  '');
+  
 
 
 // <div style="margin-bottom: 20px;background-color:#fff;">Buy Now Price: <span style="font-weight: 900; font-size: 35px;background-color: #fff;">$25,995<sup>*</sup></span></div>
